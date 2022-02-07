@@ -1,6 +1,6 @@
 import inquirer from "inquirer";
 import fs from "fs";
-import table from "table";
+import {table} from "table";
 const ANS={
     q1:"W DC",
     q2:"Kovind",
@@ -53,7 +53,7 @@ inquirer.prompt(ques)
             return[scoreCard.name,scoreCard.score];
         });
         console.log(table(tableCard));
-  });
+  }); 
 
   
 
